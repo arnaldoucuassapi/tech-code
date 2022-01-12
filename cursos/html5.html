@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/header&footer.css">
+    <script src="../js/header&footer.js"></script>
+    <title>Sobre</title>
+</head>
+<body onload="main()">
+    <header>
+        <section>
+            <div>
+                <a href="../index.html"><img src="../img/techCursos.png" alt="techCursos"></a>
+                <h1><a href="../index.html">techCursos</a></h1>
+            </div>
+
+            <nav>
+                <a href="../index.html" target="_self">Home</a>
+                <a href="../cursos.html" target="_self">Cursos</a>
+                <a href="../sobre.html" target="_self" style="color: #1877f2;">Sobre</a>
+                <a href="../login.html" target="_self">Log in</a>
+            </nav>
+            
+            <div id="boxPesquisar">
+                <input type="search" name="Pesquisar" id="inputPesquisar" placeholder="Pesquisar cursos..." onsearch="search()" onkeyup="search()">
+            </div>
+        </section>
+
+        <nav id="subMenu">
+            <a href="../index.html" target="_self">Home</a>
+            <a href="../cursos.html" target="_self" style="color: #1877f2;">Cursos</a>
+            <a href="../sobre.html" target="_self">Sobre</a>
+            <a href="../login.html" target="_self">Log in</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="results">
+            <h1>Resultados da Pesquisa:</h1>
+            <div>
+                <img id="iconePesquisado" src="" alt="">
+                <p id="descricaoPesquisa"></p>
+                <a id="linkPesquisado" href="#" target="_self"></a>
+            </div>
+        </section>
+
+        <div class="navegacao">
+            <a style="color: #1877f2;" href="../index.html">Home</a> &gt; <a style="color: #1877f2;" href="../cursos.html">Cursos</a> &gt; <a href="#">HTML5</a>
+            <img src="../img/html5-opened.svg" alt="html5_open">
+        </div>
+    </main>
+
+    <footer>
+        <section id="footbar">
+            <div>
+                <h1>Redes Sociais</h1>
+                <ul>
+                    <li><a href="#" rel="external" target="_blank">Facebook</a></li>
+                    <li><a href="#" rel="external" target="_blank">Linkedin</a></li>
+                    <li><a href="https://github.com/arnaldopro" rel="external" target="_blank">GitHub</a></li>
+                    <li><a href="#" rel="external" target="_blank">Instagram</a></li>
+                </ul>
+            </div>
+            
+            <div>
+                <h1>Sites Sugeridos</h1>
+                <ul>
+                    <li><a href="https://cursoemvideo.com.br" rel="external" target="_blank">Curso em Vídeo</a></li>
+                    <li><a href="https://estudonauta.com.br" rel="external" target="_blank">Estudonauta</a></li>
+                    <li><a href="https://devmedia.com" rel="external" target="_blank">DevMedia</a></li>
+                    <li><a href="https://alura.com" rel="external" target="_blank">Alura</a></li>
+                </ul>
+            </div>
+            
+            <div>
+                <h1>Cursos</h1>
+                <ul>
+                    <li><a href="../cursos.html#html5" target="_self">HTML5</a></li>
+                    <li><a href="../cursos.html#css3" target="_self">CSS3</a></li>
+                    <li><a href="../cursos.html#javascript" target="_self">JavaScript</a></li>
+                    <li><a href="../cursos.html" target="_self">Outros</a></li>
+                </ul>
+            </div>
+            
+            <div>
+                <h1>Registar-se</h1>
+                <ul>
+                    <li><a href="../registo.html" target="_self">Registar-se</a></li>
+                    <li><a href="../login.html" target="_self">Entrar</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <p>Copyrigth &copy; Arnaldo Ucuassapi - 2022</p>
+    </footer>
+
+    <script>
+        function main() {
+            comecarCurso = 1
+            header_footer()
+        }
+    </script>
+</body>
+</html>

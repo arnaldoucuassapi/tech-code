@@ -1,0 +1,242 @@
+@charset "UTF-8";
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+button{
+    font-size: 1.2em;
+    cursor: pointer;
+    border: none;
+    padding: .5% 5%;
+    transition: all .5s ease-in;
+}
+
+button:hover{
+    transform: scale(1.2);
+}
+
+#area1, #area2, #area3, #cursos, #area5{
+    text-align: center !important;
+}
+
+h1{
+    font-size: 1.6em;
+    text-align: center;
+}
+
+strong{
+    color: #f0f2f5;
+}
+
+button.acrescentar{
+    border-radius: 20px;
+    color: #18283d;
+    background-color: #fff;
+    transition: all .5s ease-in;
+    font-weight: bold;
+    border: 2px solid transparent;
+}
+
+button.acrescentar:hover{
+    background-color: #18283d;
+    color: #fff;
+    transform: scale(1.1);
+    border: 2px solid #f0f2f5;
+}
+
+button.bckWhite{
+    background-color: #18283d;
+    color: #fff;
+}
+
+button.bckWhite:hover{
+    background-color: #fff;
+    color: #18283d;
+}
+
+
+/*                        area 1                          */
+
+
+section#area1{
+    padding: 6.5%;
+    background: linear-gradient(to right, #02224b, #02224b7c), url(../img/background.jpg);
+    background-attachment: fixed;
+}
+
+#area1 p{
+    width: 400px;
+    margin: auto;
+    color: #fff;
+    font-size: 1.3em;
+}
+
+#area1 button{
+    background-color: white;
+    border-radius: 20px;
+    margin-top: 2.5%;
+}
+
+#area1 button:hover{
+    color: #fff;
+    background-color: #18283d;
+}
+
+
+/*                        area 2                          */
+
+
+section#area2{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #18283d;
+    padding: 3%;
+}
+
+#area2 > div.boxInfo{
+    width: 250px;
+    margin: 2% auto;
+    background-color: #fff;
+    padding: 2%;
+    transition: all .5s ease-out;
+    cursor: pointer;
+}
+
+#area2 > div.boxInfo:hover{
+    transform: scale(1.1);
+}
+
+#area2 p{
+    margin-top: 5%;
+}
+
+
+/*                        area 3                          */
+
+
+section#area3{
+    background-color: #fff;
+}
+
+#area3 > article{
+    padding: 5%;
+}
+
+summary{
+    cursor: pointer;
+    padding: 1%;
+    font-weight: bold;
+    background-color: #f0f2f5;
+    color: #18283d;
+}
+
+details{
+    text-align: start;
+    width: 100%;
+    margin: 1.5%;
+    border: none;
+}
+
+details > p{
+    padding: 1%;
+    border-left: 2px solid #18283d;
+    margin: .5% 2.5%;
+}
+
+
+/*                        cursos                          */
+
+
+section#cursos{
+    background-color: #18283d;
+}
+
+#cursos > h1{
+    color: #fff;
+}
+
+#cursos > article{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.boxCurso{
+    cursor: pointer;
+    text-align: center;
+    width: 150px;
+    height: 150px;
+    margin: 5% auto;
+    background-color: #fff;
+    transition: all .5s ease-in-out;
+}
+
+.boxCurso:hover{
+    transform: scale(1.1);
+}
+
+.boxCurso img{
+    width: 50px;
+}
+
+.boxCurso aside{
+    padding: 15% 0%;
+}
+
+.boxCurso p{
+    color: #18283d;
+    text-align: center;
+    padding: 2%;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+
+/*                        area 5                          */
+
+
+section#area5{
+    padding-bottom: 10%;
+}
+
+#area5 img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 5%;
+    filter: blur(.5px) saturate(50%);
+}
+
+#area5 > article{
+    width: 100%;
+    max-width: 500px;
+    min-width: 200px;
+    box-shadow: -6px 9px 20px rgba(0, 0, 0, 0.2);
+    margin: 5% auto;
+    border-radius: 10px;
+    padding: 5%;
+}
+
+
+ @media (max-width: 840px){
+    #info3{
+        display: none;
+    }
+ }
+
+ @media (max-width: 730px){
+    #area1 p{
+        width: 100%;
+        font-size: 1.2em;
+    }
+
+    #area2 div.boxInfo{
+        width: 45%;
+    }
+
+    #area5 > article{
+        box-shadow: none;
+    }
+}
