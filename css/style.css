@@ -31,6 +31,8 @@ strong{
 }
 
 button.acrescentar{
+    width: 150px;
+    padding: 5px !important;
     border-radius: 20px;
     color: #18283d;
     background-color: #fff;
@@ -61,27 +63,35 @@ button.bckWhite:hover{
 
 
 section#area1{
-    padding: 6.5%;
-    background: linear-gradient(to right, #02224b, #02224b7c), url(../img/background.jpg);
+    padding: 3%;
+    height: 350px;
+    background: url(../img/background.jpg) no-repeat;
     background-attachment: fixed;
+    background-size: 100% 100vh;
+    background-position: center;
 }
 
-#area1 p{
-    width: 400px;
-    margin: auto;
+#area1 h1{
+    font-weight: bold;
+    font-size: 1.6em;
     color: #fff;
-    font-size: 1.3em;
+    margin-top: 50px;
 }
 
 #area1 button{
+    width: 150px;
+    padding: 5px !important;
     background-color: white;
-    border-radius: 20px;
-    margin-top: 2.5%;
+    border-radius: 50px;
+    border: 2px solid #fff;
+    margin-top: 20px;
+    font-weight: bold;
 }
 
 #area1 button:hover{
     color: #fff;
-    background-color: #18283d;
+    background-color: transparent;
+    transform: none;
 }
 
 
@@ -91,25 +101,23 @@ section#area1{
 section#area2{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     background-color: #18283d;
-    padding: 3%;
+    padding-top: 5%;
 }
 
 #area2 > div.boxInfo{
-    width: 250px;
-    margin: 2% auto;
+    width: 200px;
+    height: 200px;
     background-color: #fff;
-    padding: 2%;
-    transition: all .5s ease-out;
-    cursor: pointer;
-}
-
-#area2 > div.boxInfo:hover{
-    transform: scale(1.1);
+    padding: 1%;
+    border-radius: 5px;
+    margin: 20px 20px;
 }
 
 #area2 p{
-    margin-top: 5%;
+    font-weight: bold;
+    margin-top: 10%;
 }
 
 
@@ -122,13 +130,15 @@ section#area3{
 
 #area3 > article{
     padding: 5%;
+    width: 80%;
+    margin: auto;
 }
 
 summary{
     cursor: pointer;
     padding: 1%;
     font-weight: bold;
-    background-color: #f0f2f5;
+    background-color: rgba(240, 242, 245, 0.396);
     color: #18283d;
 }
 
@@ -141,8 +151,9 @@ details{
 
 details > p{
     padding: 1%;
-    border-left: 2px solid #18283d;
-    margin: .5% 2.5%;
+    margin: .5% 1.5%;
+    font-weight: bold;
+    color: rgba(24, 40, 61, 0.651);
 }
 
 
@@ -221,19 +232,19 @@ section#area5{
 
 
  @media (max-width: 840px){
-    #info3{
+    .none{
         display: none;
     }
  }
 
  @media (max-width: 730px){
-    #area1 p{
-        width: 100%;
-        font-size: 1.2em;
-    }
 
-    #area2 div.boxInfo{
-        width: 45%;
+    #area1{
+        height: 300px;
+    }
+    
+    #area1 h1{
+        font-size: 1.4em;
     }
 
     #area5 > article{
