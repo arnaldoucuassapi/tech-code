@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+section.cursos{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 5% auto;
+}
+
+article.boxCurso{
+    cursor: pointer;
+    width: 35%;
+    text-align: center;
+    transition: all .5s ease-in-out;
+    padding: 3%;
+    box-shadow: -7px 7px 20px rgba(0, 0, 0, 0.1);
+}
+
+article.boxCurso:hover , .boxCurso:target{
+    transform: scale(1.1);
+}
+
+article.boxCurso > div{
+    padding: 3% 5%;
+}
+
+.boxCurso img{
+    width: 40%;
+}
+
+.boxCurso h1{
+    color: #fff;
+    font-size: 1.2em;
+    padding: 1.5%;
+}
+
+.boxCurso button{
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+    padding: 1.5% 7%;
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #f0f2f5;
+    font-weight: 700;
+    margin-top: 3%;
+}
+
+.boxCurso button:hover{
+    background-color: #fff;
+    color: #18283d;
+    border: 2px solid transparent;
+}

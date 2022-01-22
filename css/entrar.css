@@ -1,0 +1,95 @@
+@charset "UTF-8";
+
+form *{
+    font-weight: 600;
+}
+
+form{
+    background-color: #fff;
+    width: 500px;
+    margin: 5% auto;
+    padding: 6%;
+    box-shadow: -6px 9px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+form > h1{
+    text-align: center;
+    font-size: 1.4em;
+    color: #18283d;
+    margin-bottom: 5%;
+}
+
+input, select{
+    color: #1876f283 !important;;
+    outline-color: #18283d;
+    width: 100%;
+    margin: 1% auto;
+    border: 2px solid #f0f2f5;
+    border-radius: 5px;
+    padding: 2%;
+}
+
+input[type=submit]{
+    cursor: pointer;
+    margin-top: 5%;
+    background-color: #18283d;
+    color: #fff !important;
+    border-color: transparent;
+}
+
+input[type=submit]:hover{
+    background-color: #0f1e30;
+}
+
+form div{
+    text-align: center;
+    margin: 2% 0%;
+}
+
+form a{
+    color: #18283d;
+}
+
+form a:hover{
+    text-decoration: underline solid #18283d;
+}
+
+/*                Registro                */
+
+form > input[type=radio]{
+    cursor: pointer;
+    color: #18283d;
+}
+
+label{
+    font-size: 1.1em;
+    margin: 2% .5%;
+    color: #18283d;
+}
+
+input[type=number], input[type=date], select{
+    border-color: #18283d;
+    outline: none;
+}
+
+input[type=radio]{
+    width: 5%;
+}
+
+input[type=number]{
+    width: 100px;
+}
+
+input[type=date], select{
+    width: 200px;
+}
+
+
+
+@media (max-width: 520px) {
+    form{
+        width: 100%;
+        box-shadow: none;
+    }
+}

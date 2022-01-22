@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/header&footer.css">
+    <link rel="stylesheet" href="css/cursos.css">
+    <script src="js/header&footer.js"></script>
+    <script src="js/cursos.js"></script>
+    <title>Cursos</title>
+</head>
+<body onload="main()">
+    <header>
+        <section>
+            <div>
+                <a href="index.html"><img src="img/techCursos.png" alt="techCursos"></a>
+                <h1><a href="index.html">techCursos</a></h1>
+            </div>
+
+            <nav>
+                <a href="index.html" target="_self">Home</a>
+                <a href="cursos.html" target="_self" style="color: #1877f2;">Cursos</a>
+                <a href="sobre.html" target="_self">Sobre</a>
+                <a href="login.html" target="_self">Log in</a>
+            </nav>
+            
+            <div id="boxPesquisar">
+                <input type="search" name="Pesquisar" id="inputPesquisar" placeholder="Pesquisar cursos..." onsearch="search()" onkeyup="search()">
+            </div>
+        </section>
+
+        <nav id="subMenu">
+            <a href="index.html" target="_self">Home</a>
+            <a href="cursos.html" target="_self" style="color: #1877f2;">Cursos</a>
+            <a href="sobre.html" target="_self">Sobre</a>
+            <a href="login.html" target="_self">Log in</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="results">
+            <h1>Resultados da Pesquisa:</h1>
+            <div>
+                <img id="iconePesquisado" src="" alt="">
+                <p id="descricaoPesquisa"></p>
+                <a id="linkPesquisado" href="#" target="_self"></a>
+            </div>
+        </section>
+
+        <div class="navegacao">
+            <a href="index.html" style="color: #1877f2;">Home</a> &gt; <a href="#">Cursos</a>
+        </div>
+
+        <section class="cursos">
+            <article id="html5" class="boxCurso back_html5">
+                <div><img src="img/html5.svg" alt="html5"></div>
+                <h1>HTML5</h1>
+                <a href="cursos/html5.html" target="_self"><button>Começar</button></a>
+            </article>
+
+            <article id="css3" class="boxCurso back_css3">
+                <div><img src="img/css3.svg" alt="css3"></div>
+                <h1>CSS3</h1>
+                <a href="cursos/css3.html" target="_self"><button>Começar</button></a>
+            </article>
+        </section>
+
+        <section class="cursos">
+            <article id="javascript" class="boxCurso back_js">
+                <div><img src="img/javascript.svg" alt="javscript"></div>
+                <h1>JavaScript</h1>
+                <a href=""><button>Começar</button></a>
+            </article>
+            
+            <article id="csharp" class="boxCurso back_csharp">
+                <div><img src="img/csharp.svg" alt="c#"></div>
+                <h1>CSharp</h1>
+                <a href=""><button>Começar</button></a>
+            </article>
+        </section>
+
+        <section class="cursos">
+            <article id="java" class="boxCurso" style="background: linear-gradient(to right, #5382a1, #e76f00); background-attachment: fixed;">
+                <div><img src="img/java.svg" alt="java"></div>
+                <h1>Java</h1>
+                <a href=""><button>Começar</button></a>
+            </article>
+
+            <article id="python" class="boxCurso back_python">
+                <div><img src="img/python.svg" alt="python"></div>
+                <h1>Python</h1>
+                <a href=""><button>Começar</button></a>
+            </article>
+        </section>
+
+        <section class="cursos">
+            <article id="linguagemC" class="boxCurso" style="background: linear-gradient(to right, #005f91, rgba(0, 95, 145, 0.6)); background-attachment: fixed;">
+                <div><img src="img/linguagemC.svg" alt="C"></div>
+                <h1>C</h1>
+                <a href=""><button>Começar</button></a>
+            </article>
+
+            <article id="cpp" class="boxCurso" style="background: linear-gradient(to right, #02315c, rgba(2, 49, 92, 0.867)); background-attachment: fixed;">
+                <div><img src="img/cpp.svg" alt="c++"></div>
+                <h1>C++</h1>
+                <a href=""><button>Começar</button></a>
+            </article>
+        </section>
+
+        <section class="cursos">
+            <article id="php" class="boxCurso" style="background: linear-gradient(to right, #8993be, rgba(137, 147, 190, 0.6)); background-attachment: fixed;">
+                <div><img src="img/php.svg" alt="php"></div>
+                <h1>PHP</h1>
+                <a href=""><button>Começar</button></a>
+            </article>
+
+            <article id="excel" class="boxCurso" style="background: linear-gradient(to right, #33c481, rgba(51, 196, 129, 0.6)); background-attachment: fixed;">
+                <div><img src="img/excel.svg" alt="excel"></div>
+                <h1>Excel</h1>
+                <a href=""><button>Começar</button></a>
+            </article>
+        </section>
+
+        <section class="cursos">
+            <article id="photoshop" class="boxCurso" style="background: linear-gradient(to right, #0c0824, rgba(12, 8, 36, 0.6)); background-attachment: fixed;">
+                <div><img src="img/photoshop.svg" alt="photoshop"></div>
+                <h1>Photoshop</h1>
+                <a href=""><button>Começar</button></a>
+            </article>
+
+            <article id="word" class="boxCurso" style="background: linear-gradient(to right, #41a5ee, rgba(65, 165, 238, 0.6)); background-attachment: fixed;">
+                <div><img src="img/word.svg" alt="word"></div>
+                <h1>Word</h1>
+                <a href=""><button>Começar</button></a>
+            </article>
+        </section>
+
+        <section class="cursos">
+            <article id="mysql" class="boxCurso" style="background: linear-gradient(to right, #00758f, #74777c); background-attachment: fixed;">
+                <div><img src="img/mysql.svg" alt="mysql"></div>
+                <h1>MySQL</h1>
+                <a href=""><button>Começar</button></a>
+            </article>
+
+            <article id="nodejs" class="boxCurso" style="background: linear-gradient(to right, #83cd29, rgba(131, 205, 41, 0.6)); background-attachment: fixed;">
+                <div><img src="img/nodejs.svg" alt="nodejs"></div>
+                <h1>NodeJS</h1>
+                <a href=""><button>Começar</button></a>
+            </article>
+        </section>
+
+        <section class="cursos">
+            <article id="ruby" class="boxCurso" style="background: linear-gradient(to right, #e2291d, rgba(226, 41, 29, 0.6)); background-attachment: fixed;">
+                <div><img src="img/ruby.svg" alt="ruby"></div>
+                <h1>Ruby</h1>
+                <a href=""><button>Começar</button></a>
+            </article>
+
+            <article class="boxCurso" style="background: linear-gradient(to right, #83cd29, rgba(131, 205, 41, 0.6)); background-attachment: fixed;">
+                <div><img src="img/nodejs.svg" alt="nodejs"></div>
+                <h1>NodeJS</h1>
+                <a href=""><button>Começar</button></a>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <section id="footbar">
+            <div>
+                <h1>Redes Sociais</h1>
+                <ul>
+                    <li><a href="#" rel="external" target="_blank">Facebook</a></li>
+                    <li><a href="#" rel="external" target="_blank">Linkedin</a></li>
+                    <li><a href="https://github.com/arnaldopro" rel="external" target="_blank">GitHub</a></li>
+                    <li><a href="#" rel="external" target="_blank">Instagram</a></li>
+                </ul>
+            </div>
+            
+            <div>
+                <h1>Sites Sugeridos</h1>
+                <ul>
+                    <li><a href="https://cursoemvideo.com.br" rel="external" target="_blank">Curso em Vídeo</a></li>
+                    <li><a href="https://estudonauta.com.br" rel="external" target="_blank">Estudonauta</a></li>
+                    <li><a href="https://devmedia.com" rel="external" target="_blank">DevMedia</a></li>
+                    <li><a href="https://alura.com" rel="external" target="_blank">Alura</a></li>
+                </ul>
+            </div>
+            
+            <div>
+                <h1>Cursos</h1>
+                <ul>
+                    <li><a href="cursos.html#html5" target="_self">HTML5</a></li>
+                    <li><a href="cursos.html#css3" target="_self">CSS3</a></li>
+                    <li><a href="cursos.html#javascript" target="_self">JavaScript</a></li>
+                    <li><a href="cursos.html" target="_self">Outros</a></li>
+                </ul>
+            </div>
+            
+            <div>
+                <h1>Registar-se</h1>
+                <ul>
+                    <li><a href="registo.html" target="_self">Registar-se</a></li>
+                    <li><a href="login.html" target="_self">Entrar</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <p>Copyrigth &copy; Arnaldo Ucuassapi - 2022</p>
+    </footer>
+</body>
+</html>
