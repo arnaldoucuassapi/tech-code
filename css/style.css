@@ -97,7 +97,6 @@ section#area1{
 
 /*                        area 2                          */
 
-
 section#area2{
     display: flex;
     flex-wrap: wrap;
@@ -115,9 +114,12 @@ section#area2{
     margin: 20px 20px;
 }
 
-#area2 p{
+div.boxInfo > img{
+    margin: 5% 0%;
+}
+
+div.boxInfo > p{
     font-weight: bold;
-    margin-top: 10%;
 }
 
 
